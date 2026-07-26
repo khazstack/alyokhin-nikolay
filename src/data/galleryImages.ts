@@ -1,38 +1,68 @@
 import type { MediaItem } from "@/components/ui/infinite-gallery"
 
-import photo1 from "@/assets/photo1.jpeg"
-import photo2 from "@/assets/photo2.jpeg"
-import photo3 from "@/assets/photo3.jpeg"
-import photo4 from "@/assets/photo4.jpeg"
-import photo5 from "@/assets/photo5.jpeg"
-import photo6 from "@/assets/photo6.jpeg"
-import photo7 from "@/assets/photo7.jpeg"
-import photo8 from "@/assets/photo8.jpeg"
-import photo9 from "@/assets/photo9.jpeg"
-import photo10 from "@/assets/photo10.jpeg"
+import photo1 from "@/assets/photo1.jpg"
+import photo2 from "@/assets/photo2.jpg"
+import photo3 from "@/assets/photo3.jpg"
+import photo4 from "@/assets/photo4.jpg"
+import photo5 from "@/assets/photo5.jpg"
+import photo6 from "@/assets/photo6.jpg"
+import photo7 from "@/assets/photo7.jpg"
+import photo8 from "@/assets/photo8.jpg"
+import photo9 from "@/assets/photo9.jpg"
+import photo10 from "@/assets/photo10.jpg"
+import photo11 from "@/assets/photo11.jpg"
+import photo12 from "@/assets/photo12.jpg"
+import photo13 from "@/assets/photo13.jpg"
+import photo14 from "@/assets/photo14.jpg"
+import photo15 from "@/assets/photo15.jpg"
+import photo16 from "@/assets/photo16.jpg"
+import photo17 from "@/assets/photo17.jpg"
+import photo18 from "@/assets/photo18.jpg"
+import photo19 from "@/assets/photo19.jpg"
+import photo20 from "@/assets/photo20.jpg"
 
 export const galleryImages: MediaItem[] = [
-  { src: photo1, width: 9, height: 16, alt: "Фото в жёлтом платье" },
-  { src: photo2, width: 9, height: 16, alt: "Фото в ярком кимоно" },
-  { src: photo3, width: 9, height: 16, alt: "Портрет с чёрным цветком" },
-  { src: photo4, width: 16, height: 9, alt: "Фото сверху в кожаной куртке" },
-  { src: photo5, width: 16, height: 9, alt: "Фото в кимоно с поднятыми руками" },
-  { src: photo6, width: 9, height: 16, alt: "Портрет в жёлтом платье" },
-  { src: photo7, width: 9, height: 16, alt: "Портрет за стулом" },
-  { src: photo8, width: 9, height: 16, alt: "Фото в национальном чапане" },
-  { src: photo9, width: 16, height: 9, alt: "Фото сверху в белой рубашке" },
-  { src: photo10, width: 16, height: 9, alt: "Портрет в национальном чапане" },
+  { src: photo1, width: 1000, height: 1500, alt: "В образе солдата, с винтовкой на плече" },
+  { src: photo2, width: 1068, height: 1280, alt: "В образе солдата на фоне гор" },
+  { src: photo3, width: 873, height: 1280, alt: "Портрет в отражении, белая рубашка" },
+  { src: photo4, width: 1311, height: 1311, alt: "Портрет в белой рубашке, студия" },
+  { src: photo5, width: 853, height: 1280, alt: "Портрет в кардигане, студия" },
+  { src: photo6, width: 963, height: 1280, alt: "В образе с кепкой и пистолетом" },
+  { src: photo7, width: 720, height: 1600, alt: "Портрет с эмоциональной мимикой" },
+  { src: photo8, width: 720, height: 1600, alt: "В образе задержанного с конвоиром" },
+  { src: photo9, width: 720, height: 1600, alt: "В тельняшке на фоне брёвен" },
+  { src: photo10, width: 720, height: 1600, alt: "В образе постапокалиптического персонажа" },
+  { src: photo11, width: 720, height: 1600, alt: "В образе солдата с винтовкой" },
+  { src: photo12, width: 720, height: 1600, alt: "Портрет в чёрной футболке, студия" },
+  { src: photo13, width: 720, height: 1600, alt: "В пальто и кепке, интерьер" },
+  { src: photo14, width: 720, height: 1600, alt: "На съёмочной площадке в амбаре" },
+  { src: photo15, width: 720, height: 1600, alt: "Групповое фото в постапокалиптических костюмах" },
+  { src: photo16, width: 1075, height: 1280, alt: "В пиджаке на премьере" },
+  { src: photo17, width: 1201, height: 1600, alt: "Портрет с улыбкой в кардигане, студия" },
+  { src: photo18, width: 900, height: 1600, alt: "В шляпе и пальто, вечерняя улица" },
+  { src: photo19, width: 1201, height: 1600, alt: "Портрет в гриме, крупный план" },
+  { src: photo20, width: 960, height: 1280, alt: "В образе с гримом, парный кадр" },
 ]
 
 export const introImages: string[] = [
-  photo3,
+  photo4,
   photo6,
-  photo2,
+  photo17,
+  photo3,
+  photo12,
+  photo19,
+  photo1,
+  photo10,
+  photo16,
   photo9,
   photo5,
+  photo13,
+  photo20,
   photo7,
+  photo2,
+  photo18,
+  photo11,
+  photo15,
   photo8,
-  photo10,
-  photo4,
-  photo1,
+  photo14,
 ]
