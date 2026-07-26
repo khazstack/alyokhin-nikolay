@@ -20,6 +20,13 @@ import photo17 from "@/assets/photo17.jpg"
 import photo18 from "@/assets/photo18.jpg"
 import photo19 from "@/assets/photo19.jpg"
 import photo20 from "@/assets/photo20.jpg"
+import photo21 from "@/assets/photo21.jpg"
+import photo22 from "@/assets/photo22.jpg"
+import photo23 from "@/assets/photo23.jpg"
+import photo24 from "@/assets/photo24.jpg"
+import photo25 from "@/assets/photo25.jpg"
+import photo26 from "@/assets/photo26.jpg"
+import photo27 from "@/assets/photo27.jpg"
 
 export const galleryImages: MediaItem[] = [
   { src: photo1, width: 1000, height: 1500, alt: "В образе солдата, с винтовкой на плече" },
@@ -42,6 +49,13 @@ export const galleryImages: MediaItem[] = [
   { src: photo18, width: 900, height: 1600, alt: "В шляпе и пальто, вечерняя улица" },
   { src: photo19, width: 1201, height: 1600, alt: "Портрет в гриме, крупный план" },
   { src: photo20, width: 960, height: 1280, alt: "В образе с гримом, парный кадр" },
+  { src: photo21, width: 960, height: 1280, alt: "Портрет сидя на полу, студия" },
+  { src: photo22, width: 932, height: 1280, alt: "Портрет в белой рубашке в полный рост" },
+  { src: photo23, width: 853, height: 1280, alt: "Портрет в футболке в полный рост" },
+  { src: photo24, width: 958, height: 1280, alt: "На съёмочной площадке у автомобиля" },
+  { src: photo25, width: 960, height: 1280, alt: "Портрет в чёрной футболке в полный рост" },
+  { src: photo26, width: 1200, height: 1600, alt: "Портрет в кардигане в полный рост" },
+  { src: photo27, width: 1200, height: 1600, alt: "Портрет в кожаной куртке и кепке" },
 ]
 
 export const introImages: string[] = [
@@ -65,4 +79,12 @@ export const introImages: string[] = [
   photo15,
   photo8,
   photo14,
+  photo26,
+  photo22,
+  photo7,
+  photo25,
+  photo21,
+  photo27,
+  photo24,
+  photo23,
 ]
