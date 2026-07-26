@@ -1,6 +1,6 @@
 import TopNav from "@/components/TopNav";
 import contactHero from "@/assets/contact-hero.jpeg";
-import { Instagram, Phone, Mail, Clapperboard } from "lucide-react";
+import { Instagram, Phone, Clapperboard } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 const Contact = () => {
@@ -15,7 +15,7 @@ const Contact = () => {
         <div style={{ position: "relative", width: "100%" }}>
           <img
             src={contactHero}
-            alt="Эльмира Молдабаева"
+            alt="Николай Алёхин"
             style={{
               width: "100%",
               height: "auto",
@@ -34,7 +34,7 @@ const Contact = () => {
       ) : (
         <img
           src={contactHero}
-          alt="Эльмира Молдабаева"
+          alt="Николай Алёхин"
           style={{
             position: "absolute",
             inset: 0,
@@ -80,7 +80,7 @@ const Contact = () => {
           marginBottom: 4,
           lineHeight: 1.2,
         }}>
-          ЭЛЬМИРА<br />МОЛДАБАЕВА
+          НИКОЛАЙ<br />АЛЁХИН
         </h1>
         <p style={{
           fontSize: isMobile ? 10 : 11,
@@ -89,7 +89,7 @@ const Contact = () => {
           color: "rgba(255,255,255,0.45)",
           marginBottom: isMobile ? 28 : 40,
         }}>
-          модель · актриса · лицо
+          актёр · г. талдыкорган
         </p>
 
         {/* Divider */}
@@ -103,12 +103,12 @@ const Contact = () => {
               Портфолио
             </p>
             <a
-              href="https://instagram.com/elmira.mold"
+              href="https://instagram.com/Nikola_transformator"
               target="_blank"
               rel="noopener noreferrer"
               style={{ fontSize: 13, letterSpacing: "0.1em", color: "rgba(255,255,255,0.8)", textDecoration: "none" }}
             >
-              instagram.com/elmira.mold
+              @Nikola_transformator
             </a>
             <p style={{ fontSize: 10, color: "rgba(255,255,255,0.3)", marginTop: 4, letterSpacing: "0.05em" }}>
               все работы · реклама · роли
@@ -123,30 +123,10 @@ const Contact = () => {
             <p style={{ fontSize: 10, letterSpacing: "0.3em", textTransform: "uppercase", color: "rgba(255,255,255,0.4)", marginBottom: 6 }}>
               Контакты
             </p>
-            <a href="tel:+77771067023" style={{ fontSize: 13, letterSpacing: "0.1em", color: "rgba(255,255,255,0.8)", textDecoration: "none", display: "block", marginBottom: 4 }}>
-              +7 777 106 7023
+            <a href="tel:+77776868526" style={{ fontSize: 13, letterSpacing: "0.1em", color: "rgba(255,255,255,0.8)", textDecoration: "none", display: "block", marginBottom: 4 }}>
+              +7 777 686 8526
             </a>
             <span style={{ fontSize: 10, color: "rgba(255,255,255,0.3)", letterSpacing: "0.05em" }}>звонки / WhatsApp</span>
-            <a href="tel:+77022652049" style={{ fontSize: 13, letterSpacing: "0.1em", color: "rgba(255,255,255,0.8)", textDecoration: "none", display: "block", marginTop: 8, marginBottom: 4 }}>
-              +7 702 265 2049
-            </a>
-            <span style={{ fontSize: 10, color: "rgba(255,255,255,0.3)", letterSpacing: "0.05em" }}>WhatsApp</span>
-          </div>
-        </div>
-
-        {/* Email */}
-        <div style={{ display: "flex", alignItems: "flex-start", gap: 14, marginBottom: isMobile ? 28 : 36 }}>
-          <Mail size={16} style={{ marginTop: 2, opacity: 0.5, flexShrink: 0 }} />
-          <div>
-            <p style={{ fontSize: 10, letterSpacing: "0.3em", textTransform: "uppercase", color: "rgba(255,255,255,0.4)", marginBottom: 6 }}>
-              Почта
-            </p>
-            <a
-              href="mailto:1109ely@mail.ru"
-              style={{ fontSize: 13, letterSpacing: "0.1em", color: "rgba(255,255,255,0.8)", textDecoration: "none" }}
-            >
-              1109ely@mail.ru
-            </a>
           </div>
         </div>
 
@@ -163,7 +143,7 @@ const Contact = () => {
             color: "rgba(255,255,255,0.5)",
             lineHeight: 1.6,
           }}>
-            «Каждый кастинг — мой выход»
+            «Любая роль — от бандита до директора»
           </p>
         </div>
       </div>
