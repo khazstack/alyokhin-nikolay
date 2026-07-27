@@ -30,9 +30,12 @@ const InfiniteGallery = React.forwardRef<HTMLDivElement, InfiniteGalleryProps>(
     const [currentIndex, setCurrentIndex] = React.useState(0)
 
     // Each slide is sized to the photo's natural aspect ratio at full viewport
-    // height, so photos sit edge-to-edge with no black gaps.
+    // height, so photos sit edge-to-edge with no black gaps. Widths are
+    // rounded to whole pixels — fractional flex-item widths cause the browser
+    // to leave a hairline (sub-pixel) gap between adjacent slides, which
+    // shows up as a thin black seam since the page background is black.
     const itemWidths = React.useMemo(
-      () => items.map((item) => calculateWidth(item, viewportHeight)),
+      () => items.map((item) => Math.round(calculateWidth(item, viewportHeight))),
       [items, viewportHeight]
     )
 
@@ -156,9 +159,8 @@ const InfiniteGallery = React.forwardRef<HTMLDivElement, InfiniteGalleryProps>(
                 <img
                   src={item.src}
                   alt={item.alt ?? ""}
-                  className="h-full w-full object-cover text-lg"
-
-
+                  className="h-full object-cover text-lg"
+                  style={{ width: "calc(100% + 1px)" }}
                   loading="lazy"
                   decoding="async"
                   draggable={false}
