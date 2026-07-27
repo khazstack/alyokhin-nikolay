@@ -1,8 +1,6 @@
 import TopNav from "@/components/TopNav";
-import contactPhoto1 from "@/assets/photo5.jpg";
-import contactPhoto2 from "@/assets/photo22.jpg";
-import contactPhoto3 from "@/assets/photo25.jpg";
-import contactPhoto4 from "@/assets/photo26.jpg";
+import contactPhoto1 from "@/assets/photo4.jpg";
+import contactPhoto2 from "@/assets/photo28.jpg";
 import { Instagram, Phone, Clapperboard } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 
@@ -16,8 +14,8 @@ const Contact = () => {
       {/* Hero image */}
       {isMobile ? (
         <div style={{ position: "relative", width: "100%", height: "75vh" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gridTemplateRows: "1fr 1fr", width: "100%", height: "100%" }}>
-            {[contactPhoto1, contactPhoto2, contactPhoto3, contactPhoto4].map((src, i) => (
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", width: "100%", height: "100%" }}>
+            {[contactPhoto1, contactPhoto2].map((src, i) => (
               <img
                 key={i}
                 src={src}
@@ -36,8 +34,8 @@ const Contact = () => {
           />
         </div>
       ) : (
-        <div style={{ position: "absolute", inset: 0, display: "grid", gridTemplateColumns: "1fr 1fr", gridTemplateRows: "1fr 1fr" }}>
-          {[contactPhoto1, contactPhoto2, contactPhoto3, contactPhoto4].map((src, i) => (
+        <div style={{ position: "absolute", inset: 0, display: "grid", gridTemplateColumns: "1fr 1fr" }}>
+          {[contactPhoto1, contactPhoto2].map((src, i) => (
             <img
               key={i}
               src={src}

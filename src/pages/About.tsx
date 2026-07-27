@@ -1,6 +1,6 @@
 import TopNav from "@/components/TopNav";
-import aboutHeroLeft from "@/assets/photo17.jpg";
-import aboutHeroRight from "@/assets/photo27.jpg";
+import aboutHeroLeft from "@/assets/photo4.jpg";
+import aboutHeroRight from "@/assets/photo28.jpg";
 
 const About = () =>
 <main className="bg-black text-white min-h-screen" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
