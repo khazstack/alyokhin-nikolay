@@ -25,7 +25,7 @@ const About = () =>
           Николай Алёхин
         </h1>
         <p className="text-[11px] md:text-2xl font-light tracking-[0.2em] md:tracking-[0.3em] uppercase text-white/70 whitespace-nowrap">
-          АКТЁР — г. ТАЛДЫКОРГАН
+          АКТЁР — Г. ТАЛДЫКОРГАН / АЛМАТЫ
         </p>
       </div>
     </section>
@@ -58,7 +58,7 @@ const About = () =>
       ["Размер брюк", "34"],
       ["Размер обуви", "45"],
       ["Размер головы", "58–59"],
-      ["Город", "Талдыкорган"],
+      ["Город", "Талдыкорган / Алматы"],
       ["Языки", "Казахский, английский (разговорный)"]].
       map(([label, value]) =>
       <div key={label} className="flex justify-between items-baseline py-3 border-b border-white/10">
