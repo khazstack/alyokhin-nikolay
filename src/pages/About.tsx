@@ -1,21 +1,35 @@
 import TopNav from "@/components/TopNav";
-import aboutHero from "@/assets/about-hero.jpeg";
+import aboutHeroLeft from "@/assets/photo17.jpg";
+import aboutHeroRight from "@/assets/photo27.jpg";
 
 const About = () =>
 <main className="bg-black text-white min-h-screen" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
     <TopNav />
 
     {/* Hero */}
-    <section className="relative md:h-screen overflow-hidden">
-      <img
-        src={aboutHero}
-        alt="Алёхин Николай Алексеевич"
-        className="block w-full h-auto max-h-[85vh] object-contain object-[center_20%] bg-black md:absolute md:inset-0 md:h-full md:max-h-none md:object-cover md:opacity-70"
+    <section className="relative h-[70vh] md:h-screen overflow-hidden">
+      <div className="absolute inset-0 grid grid-cols-2">
+        <img
+          src={aboutHeroLeft}
+          alt="Николай Алёхин"
+          className="h-full w-full object-cover object-top"
+        />
+        <img
+          src={aboutHeroRight}
+          alt="Николай Алёхин"
+          className="h-full w-full object-cover object-top"
+        />
+      </div>
+      <div
+        className="absolute inset-0"
         style={{
           WebkitMaskImage:
             "linear-gradient(to bottom, #000 0%, #000 55%, rgba(0,0,0,0.7) 78%, rgba(0,0,0,0.25) 92%, transparent 100%)",
           maskImage:
             "linear-gradient(to bottom, #000 0%, #000 55%, rgba(0,0,0,0.7) 78%, rgba(0,0,0,0.25) 92%, transparent 100%)",
+          background: "#000",
+          mixBlendMode: "multiply",
+          opacity: 0.3,
         }}
       />
     

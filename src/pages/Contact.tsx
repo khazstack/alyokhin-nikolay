@@ -1,5 +1,8 @@
 import TopNav from "@/components/TopNav";
-import contactHero from "@/assets/contact-hero.jpeg";
+import contactPhoto1 from "@/assets/photo5.jpg";
+import contactPhoto2 from "@/assets/photo22.jpg";
+import contactPhoto3 from "@/assets/photo25.jpg";
+import contactPhoto4 from "@/assets/photo26.jpg";
 import { Instagram, Phone, Clapperboard } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 
@@ -12,39 +15,37 @@ const Contact = () => {
       
       {/* Hero image */}
       {isMobile ? (
-        <div style={{ position: "relative", width: "100%" }}>
-          <img
-            src={contactHero}
-            alt="Николай Алёхин"
+        <div style={{ position: "relative", width: "100%", height: "75vh" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gridTemplateRows: "1fr 1fr", width: "100%", height: "100%" }}>
+            {[contactPhoto1, contactPhoto2, contactPhoto3, contactPhoto4].map((src, i) => (
+              <img
+                key={i}
+                src={src}
+                alt="Николай Алёхин"
+                style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 20%", display: "block" }}
+              />
+            ))}
+          </div>
+          <div
             style={{
-              width: "100%",
-              height: "auto",
-              maxHeight: "75vh",
-              objectFit: "contain",
-              objectPosition: "center 20%",
-              display: "block",
-              background: "#000",
-              WebkitMaskImage:
-                "linear-gradient(to bottom, #000 0%, #000 55%, rgba(0,0,0,0.7) 75%, rgba(0,0,0,0.25) 92%, transparent 100%)",
-              maskImage:
-                "linear-gradient(to bottom, #000 0%, #000 55%, rgba(0,0,0,0.7) 75%, rgba(0,0,0,0.25) 92%, transparent 100%)",
+              position: "absolute",
+              inset: 0,
+              background: "linear-gradient(to bottom, transparent 55%, rgba(0,0,0,0.75) 78%, #000 100%)",
+              pointerEvents: "none",
             }}
           />
         </div>
       ) : (
-        <img
-          src={contactHero}
-          alt="Николай Алёхин"
-          style={{
-            position: "absolute",
-            inset: 0,
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-            objectPosition: "center 20%",
-            display: "block",
-          }}
-        />
+        <div style={{ position: "absolute", inset: 0, display: "grid", gridTemplateColumns: "1fr 1fr", gridTemplateRows: "1fr 1fr" }}>
+          {[contactPhoto1, contactPhoto2, contactPhoto3, contactPhoto4].map((src, i) => (
+            <img
+              key={i}
+              src={src}
+              alt="Николай Алёхин"
+              style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 20%", display: "block" }}
+            />
+          ))}
+        </div>
       )}
 
       {/* Gradient overlay (desktop only) */}
