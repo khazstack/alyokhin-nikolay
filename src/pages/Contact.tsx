@@ -89,7 +89,7 @@ const Contact = () => {
           color: "rgba(255,255,255,0.45)",
           marginBottom: isMobile ? 28 : 40,
         }}>
-          АКТЁР · Г. АЛМАТЫ&nbsp;/ ТАЛДЫКОРГАН
+          АКТЁР · Г. АЛМАТЫ/ТАЛДЫКОРГАН
         </p>
 
         {/* Divider */}
